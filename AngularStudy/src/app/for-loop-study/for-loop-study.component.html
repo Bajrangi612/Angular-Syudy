@@ -1,0 +1,113 @@
+<h2>Study ng for loop</h2>
+<!-- Stuctural directive -->
+
+<!-- <ul>
+    <li>{{postArray[0]}}</li>
+    <li>{{postArray[1]}}</li>
+    <li>{{postArray[2]}}</li>
+    <li>{{postArray[3]}}</li>
+    <li>{{postArray[4]}}</li>
+</ul>
+<p>fatch elements of array suing ngFor directive</p>
+<ul>
+    <li *ngFor ="let post of postArray"> {{post}}</li>
+</ul>
+<p>Fatch the object Array</p>
+<ul>
+    <li *ngFor="let post of objArray"> {{post | json}}</li>
+</ul>
+
+
+<p>Fatch any data from object Array</p>
+<ul>
+    <li *ngFor="let post of objArray "> {{ post.postTitle }}</li>
+</ul> -->
+
+<!-- <p>Add and delete data from an array</p>
+<button (click)="addNewData()">Add New Data</button>
+<ul>
+    <li *ngFor="let post of objArray "> {{ post.postTitle }}
+    <button (click)="deleteOnClick(post)">Delete</button></li>
+</ul> -->
+
+
+
+<!-- <p>Fatching the index number using ngFor </p>
+<button (click)="addNewData()">Add New Data</button>
+<ul>
+    <li *ngFor="let post of objArray; let i = index "> {{  i  }}{{ post.postTitle }}
+    <button (click)="deleteOnClickByIndexNumber(i)">Delete</button></li>
+</ul> -->
+
+<!-- <p>Uses of *ngIf</p>
+
+<button (click)="addNewData()">Add New Data</button>
+<div *ngIf="objArray.length > 0">
+    
+    <ul>
+        <li *ngFor="let post of objArray; let i = index "> {{ post.postTitle }}
+        <button (click)="deleteOnClickByIndexNumber(i)">Delete</button></li>
+    </ul>
+</div>
+<div *ngIf="objArray.length == 0">
+<p>No data to show ...</p>
+</div> -->
+
+
+<!-- uses of ng-Template -->
+<!-- <button (click)="addNewData()">Add New Data</button>
+
+<div *ngIf="objArray.length > 0; else noData ">
+    
+    <ul>
+        <li *ngFor="let post of objArray; let i = index "> {{ post.postTitle }}
+        <button (click)="deleteOnClickByIndexNumber(i)">Delete</button></li>
+    </ul>
+</div>
+<ng-template #noData>
+    <p>No data to show ...</p>
+</ng-template> -->
+
+
+<!-- Another aproch -->
+<!-- 
+<button (click)="addNewData()">Add New Data</button>
+
+<div *ngIf="objArray.length > 0;then postList else noData "></div>
+     
+    <ng-template #postList>
+        <ul>
+            <li *ngFor="let post of objArray; let i = index "> {{ post.postTitle }}
+            <button (click)="deleteOnClickByIndexNumber(i)">Delete</button></li>
+        </ul>
+    </ng-template>
+<ng-template #noData>
+    <p>No data to show ...</p>
+</ng-template> -->
+
+
+<!-- ng switchCase -->
+
+<button (click)="onClick('step 1')">step 1</button>
+<button (click)="onClick('step 2')">step 2</button>
+<button (click)="onClick('step 3')">step 3</button>
+<!-- <div>
+    <div *ngIf="stepStatus == 'step 1'">step 1 clicked </div>
+    <div *ngIf="stepStatus == 'step 2'">step 2 clicked </div>
+    <div *ngIf="stepStatus == 'step 3'">step 3 clicked </div>
+</div> -->
+<!-- other aproch -->
+
+<div [ngSwitch]="stepStatus">
+    <div *ngSwitchCase=" 'step 1' ">step 1 clicked </div>
+    <div *ngSwitchCase=" 'step 2' ">step 2 clicked </div>
+    <div *ngSwitchCase=" 'step 3' ">step 3 clicked </div>
+    <div *ngSwitchDefault>SomthingElse</div>
+</div>
+
+
+
+
+
+
+

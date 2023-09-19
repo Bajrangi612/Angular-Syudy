@@ -1,0 +1,37 @@
+<p>study works!</p>
+<!-- class Binding -->
+<h1 [class.text-red]="bool">Angular Application</h1>
+
+<!-- style binding -->
+<h1 [style.color]="bool ? 'red' :'blue'"> Style Biding</h1>
+
+
+ <!-- Event Binding -->
+  <!-- <button (click)='buttonClick()'>Click me</button> -->
+
+  <!-- Event Filtering -->
+
+  <!-- <input type="text" (keyup)="onKeyup($event)"> -->
+  <!-- <input type="text" (keyup.Enter)="onKeyup1()"> -->
+
+
+
+  <!-- <input type="text" (keyup.enter)='onClick2($event)'> -->
+  <!-- <input type="text" (keyup.enter)='onClick3(userName.value)' #userName> -->
+
+
+  <!-- two way data binding -->
+  <!-- <input type="text" [(ngModel)] = 'userName' (keyup.enter)="onclick4()"> -->
+
+
+  <!-- One way and two way data Binding -->
+<!-- one way Binding -->
+  <input type="text" [value]="textValue" (keyup.enter)="onClick5()"  >
+  <br>
+  <!-- two way binding  -->
+  <input type="text" [(ngModel)] ='textValue' (keyup.enter)="onClick5()">
+
+
+
+
+
