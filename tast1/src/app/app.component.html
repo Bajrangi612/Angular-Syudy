@@ -1,0 +1,25 @@
+<div class="row parent">
+<div class="post-area col-6">
+  <h1>Post Title</h1>
+  <div class="d-flex flex-column gap-2">
+  <input type="text" placeholder="Post Title" [(ngModel)]="postTitle">
+  <textarea cols="30" rows="1" placeholder="Post Details" [(ngModel)]="postDetails"></textarea> 
+  <input type="text" placeholder="Image URL" [(ngModel)]="imageURL">
+  <input type="text" placeholder="Post URL" [(ngModel)]="postURL" #url> 
+ <div class="checkBiox">
+   <input type="checkbox" [(ngModel)]="addBackground">
+ Add Background
+  </div> 
+  </div>
+</div>
+<div class="preview-area col-6" [ngClass]="addBackground?'addbackground' :'0' ">
+  <h1>Preview area</h1>
+  <h1 > {{postTitle}}</h1> 
+  <img [src]="imageURL" alt="" width="50%">
+  <p>{{postDetails}}</p>
+  <div *ngIf="url.value">
+    <a [href]="postURL">Post Website</a>
+  </div>
+
+</div>
+</div>

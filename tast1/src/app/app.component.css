@@ -1,0 +1,17 @@
+.post-area{
+    padding: 40px;
+    text-align: center;
+    border-right: 3px solid #ec7211;
+}
+.preview-area{
+    padding: 40px;
+    text-align: center;
+    /* border: 1px solid #ec7211; */
+}
+.addbackground{
+    background-color: yellow;
+}
+.parent{
+    height: 100vh;
+    width: 100vw;
+}
