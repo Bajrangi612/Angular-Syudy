@@ -9,6 +9,7 @@ import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post/post-list/post-list.component';
 import { StudyComponent } from './study/study.component';
 import { ForLoopStudyComponent } from './for-loop-study/for-loop-study.component';
+import { GeneralPracticeComponent } from './general-practice/general-practice.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ForLoopStudyComponent } from './for-loop-study/for-loop-study.component
     PostComponent,
     PostListComponent,
     StudyComponent,
-    ForLoopStudyComponent
+    ForLoopStudyComponent,
+    GeneralPracticeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<!-- <p>general-practice works!</p> -->
+<!-- <ul>
+    <li>{{postArray}}</li>
+</ul> -->
+
+<!-- <ul>
+    <li *ngFor ="let abc of postArray" >{{abc}}</li>
+</ul> -->
+<button (click)="addNewPost()">Add new Post</button>
+<ul>
+    <div>
+    <li *ngFor =" let abc of postArray; let i = index">{{abc}}
+    <button (click)="deleteByPost(abc)">Delete</button></li> 
+</div>
+</ul>
+
