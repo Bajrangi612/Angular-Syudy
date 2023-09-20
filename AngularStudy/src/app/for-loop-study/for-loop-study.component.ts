@@ -38,4 +38,13 @@ export class ForLoopStudyComponent implements OnInit {
 this.stepStatus = status;
   }
 
+  textStyle:boolean = true;
+
+changeColor(){
+  if(this.textStyle==true)
+  this.textStyle =false;
+else
+this.textStyle = true;
+}
+
 }
